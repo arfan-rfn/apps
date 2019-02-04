@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exception.celebrityguess.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/option0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/option1"
+            android:layout_centerHorizontal="true"
+            android:text="Button"
+            android:onClick="guessCelebrity"
+            android:tag="0"/>
+
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/option2"
+            android:layout_alignLeft="@+id/option0"
+            android:layout_alignStart="@+id/option0"
+            android:text="Button"
+            android:onClick="guessCelebrity"
+            android:tag="1"/>
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/option3"
+            android:layout_alignLeft="@+id/option1"
+            android:layout_alignStart="@+id/option1"
+            android:text="Button"
+            android:onClick="guessCelebrity"
+            android:tag="2"/>
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/option2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/option2"
+            android:text="Button"
+            android:onClick="guessCelebrity"
+            android:tag="3"/>
+
+        <ImageView
+            android:id="@+id/celebrityImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/option0"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@android:color/holo_purple" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
